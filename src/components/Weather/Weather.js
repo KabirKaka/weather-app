@@ -56,7 +56,7 @@ const Weather = () => {
 		const city = "karachi";
 		fetchData(
 			{
-				url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e16084441dc5eea268d39e07424985c5`,
+				url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.OPEN_WEATHER_API_KEY}`,
 			},
 			applyData
 		);
@@ -69,7 +69,7 @@ const Weather = () => {
 		console.log("inputHandler running");
 		fetchData(
 			{
-				url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=e16084441dc5eea268d39e07424985c5`,
+				url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.OPEN_WEATHER_API_KEY}`,
 			},
 			applyData
 		);
