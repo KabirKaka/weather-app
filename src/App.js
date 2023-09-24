@@ -4,7 +4,7 @@ import Weather from "./components/Weather/Weather";
 
 function App() {
 	return (
-		<Fragment>
+		<Fragment> 
 			<Weather />
 		</Fragment>
 	);

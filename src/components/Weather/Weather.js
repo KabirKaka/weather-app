@@ -52,15 +52,16 @@ const Weather = () => {
 		});
 	}, []);
 
+
 	useEffect(() => {
 		const city = "karachi";
 		fetchData(
 			{
-				url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.OPEN_WEATHER_API_KEY}`,
+				url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e16084441dc5eea268d39e07424985c5`,
 			},
 			applyData
 		);
-	}, [fetchData, applyData]);
+	}, [fetchData, applyData ]);
 
 	const { loc, temp, weatherMain, weatherDesc, humidity, pressure, feelsLike } =
 		data;
@@ -69,7 +70,7 @@ const Weather = () => {
 		console.log("inputHandler running");
 		fetchData(
 			{
-				url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.OPEN_WEATHER_API_KEY}`,
+				url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=e16084441dc5eea268d39e07424985c5`,
 			},
 			applyData
 		);
@@ -107,7 +108,7 @@ const Weather = () => {
 				<Card>
 					<InputForm onInput={inputHandler} />
 					{error && !isLoading && (
-						<p className={styles.message}>Country not Found!! Try Again.</p>
+						<p className={styles.message}>City not Found!! Try Again.</p>
 					)}
 					{isLoading && <Loader />}
 					{!error && !isLoading && (
