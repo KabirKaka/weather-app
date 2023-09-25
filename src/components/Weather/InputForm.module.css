@@ -22,6 +22,9 @@
 	width: 100%;   
     border-radius:  1rem  0  0 1rem;
 }
+.inputForm input:focus ,.inputForm input:hover{
+	background: white;
+}
 .inputForm input::placeholder{
 	
     color: rgb(111, 110, 110);
