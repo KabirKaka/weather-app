@@ -19,8 +19,7 @@
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/responsive-ip-address-tracker-using-api--t9IbWpL-o
-- Live Site URL: https://ip-address-tracker-three-alpha.vercel.app/
+- Live Site URL: https://weather-app-react-ecru-one.vercel.app/
 
 ## My process
 
